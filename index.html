@@ -10,19 +10,21 @@
     <h1>Data Entry</h1>
 
     <form id="data-form">
-        <label for="name">Enter your Name</label>
+        <label for="name">Enter Guest Name</label>
         <br />
         <input id="name" type="text" >
 
         <br />
         <br />
 
-        <label for="age">Enter your Age</label>
+        <label for="message">Enter Message</label>
         <br />
-        <input id="age" type="number">
+        <input id="message" type="text">
 
         <button name="submit">Get Free Taco</button>
     </form>
+
+    <h1>Data for Free Taco</h1>
 
     <ul id="data-list">
 
@@ -34,13 +36,13 @@
             event.preventDefault();
 
             let name = document.getElementById("name").value;
-            let age = document.getElementById("age").value;
+            let message  = document.getElementById("message").value;
 
             const dispData = document.getElementById('data-list');
             dispData.innerHTML = ` 
             
-            <li>Name: ${name} </li>
-            <li>Name: ${age} </li>
+            <li>Guest Name: ${name} </li>
+            <li>Message: ${message} </li>
 
             `;
 
